@@ -1,0 +1,62 @@
+$break-points: (
+    xs: 576px,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px
+);
+
+// sm above//
+@mixin res-above($break-point) {
+
+    @if map-has-key($break-points, $break-point){
+
+        $break-point-value: map-get($break-points, $break-point);
+        
+        @media screen and (min-width: $break-point-value) {
+            @content;
+        }
+    }@else{
+        @warn 'invalid breakpoints: #{break-point}.';
+    }
+    
+}
+
+
+//sm below//
+
+@mixin res-below($break-point) {
+    @if map-has-key($break-points, $break-point ){
+        $break-point-value: map-get($break-points, $break-point );
+        @media (max-width:($break-point-value - 1)) {
+            @content;
+        }
+    }@else{
+        @warn 'Invalid Break-point #{$break-point}.';
+    }
+    
+}
+
+
+
+// betweeen breakpoints//
+
+@mixin res-btw($upper, $lower) {
+
+    @if map-has-key($break-points, $upper, $break-points,$lower ){
+        $lower-break-point: map-get($break-points,$lower);
+        $upper-break-point: map-get($break-points, $upper);
+
+        @media (min-width: $lower-break-point)and (max-width: ($upper-break-point -1)){
+            @content;
+        } 
+    
+
+
+    }@else {
+        @if (map-has-key($break-points, $upper) == false){
+            @warn 'invalid Upper breakpoint:#{upper}.';
+        }@else{
+            @warn'invalid lower breakpoint @ #{lower}';
+        }
+    }
+}

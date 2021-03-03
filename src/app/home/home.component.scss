@@ -1,0 +1,62 @@
+.home{
+    position: relative;
+    width: 100%;
+    height: 400px;
+
+
+    .content{
+        position: absolute;
+        padding: 0 0 0 40px;
+        top: 50%;
+        left: 30%;
+        transform: translate(-50%,-50%);
+
+        h2{
+            color: #fff;
+            font-size: 34px;
+        }
+        p{
+            color: #fff;
+        }
+     
+    }
+    .icon{
+        position: absolute;
+            left: 80%;
+            top: 60%;
+        .round{
+            border-radius: 50%;
+            height: 50px;
+            width: 50px;
+            animation: blink 2s infinite;
+            -webkit-animation: blink 2s infinite;
+            -moz-animation: blink 2s infinite;
+         
+
+            @keyframes blink {
+                0%{
+                    background-color: rgb(101, 243, 243);
+                   
+                }
+                25%{
+                    background-color: rgb(0, 174, 255);
+                 
+                }
+                50%{
+                    background-color: rgb(27, 65, 190);
+                }
+                75%{
+                    background-color: rgb(9, 38, 133);
+                }
+                100%{
+                    background-color: rgb(1, 12, 49);
+                }
+            }
+        }
+      
+    }
+
+    @media screen and (max-width:600px) {
+         height: 400px;}
+    
+}

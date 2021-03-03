@@ -1,0 +1,207 @@
+@import '../media';
+
+.category{
+h2{
+    font-weight: 700;
+    padding: 50px 0px;
+}
+.card{
+    border-radius: 5px;
+    border: rgb(1, 65, 241) solid 1px
+}
+.card-body{
+    background-image: url('../../assets/img/category.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    min-width: 100px;
+}
+.card-footer{
+    background-color: rgb(53, 9, 250);
+     transition: background-color 2s ease-out 100ms;
+    &:hover{
+        background-color: aqua;}
+}
+h4{color:#fff;font-weight: 400;font-size: 18px;}
+
+}
+
+
+
+
+
+
+.bestsellers{
+    h2{font-weight: 700; padding: 50px 0px; } 
+       .container{
+        .row{
+            .col-md-3{
+                .card{
+                    .card-body{
+                        background-image: url('../../assets/img/img1.jpg');
+                        background-size: cover;
+                        background-position: center;
+                         width: 100%;
+                    }
+                    .card-footer{
+                        height:140px;
+                        padding: 10px 20px;
+                        #star {
+  
+                            /* use display:inline-flex to prevent whitespace issues. alternatively, you can put all the children of .rating-group on a single line */
+                            .rating-group {
+                              display: inline-flex;
+                            }
+                            
+                            /* make hover effect work properly in IE */
+                            .rating__icon {
+                              pointer-events: none;
+                            }
+                            
+                            /* hide radio inputs */
+                            .rating__input {
+                             position: absolute !important;
+                             left: -9999px !important;
+                            }
+                          
+                            /* set icon padding and size */
+                            .rating__label {
+                              cursor: pointer;
+                              /* if you change the left/right padding, update the margin-right property of .rating__label--half as well. */
+                              padding: 0 0.1em;
+                              font-size: 1.6rem;
+                            }
+                          
+                            /* add padding and positioning to half star labels */
+                            .rating__label--half {
+                              padding-right: 0;
+                              margin-right: -0.6em;
+                              z-index: 2;
+                            }
+                            
+                            /* set default star color */
+                            .rating__icon--star {
+                              color: orange;
+                            }
+                            
+                            /* set color of none icon when unchecked */
+                            .rating__icon--none {
+                              color: #eee;
+                            }
+                          
+                            /* if none icon is checked, make it red */
+                            .rating__input--none:checked + .rating__label .rating__icon--none {
+                              color: red;
+                            }
+                          
+                            /* if any input is checked, make its following siblings grey */
+                            .rating__input:checked ~ .rating__label .rating__icon--star {
+                              color: #ddd;
+                            }
+                            
+                            /* make all stars orange on rating group hover */
+                            .rating-group:hover .rating__label .rating__icon--star,
+                            .rating-group:hover .rating__label--half .rating__icon--star {
+                              color: orange;
+                            }
+                          
+                            /* make hovered input's following siblings grey on hover */
+                            .rating__input:hover ~ .rating__label .rating__icon--star,
+                            .rating__input:hover ~ .rating__label--half .rating__icon--star {
+                              color: #ddd;
+                            }
+                            
+                            /* make none icon grey on rating group hover */
+                            .rating-group:hover .rating__input--none:not(:hover) + .rating__label .rating__icon--none {
+                               color: #eee;
+                            }
+                          
+                            /* make none icon red on hover */
+                            .rating__input--none:hover + .rating__label .rating__icon--none {
+                              color: red;
+                            }
+                          }
+                            
+                        .spec{
+                            position: relative;
+                            height: auto;
+                            .name{
+                                position: absolute;
+                                left: 0%;
+                            }
+                            .like{
+                                position:absolute;
+                                left:80%;
+                                top: -9px;
+                                font-size: 28px;
+                                &:active ,:hover{
+                                    color:red;
+                                }
+                            }
+                        }
+                        .price{
+                            position:absolute;
+                            padding: 30px 0px;
+                            color: red;
+                        }
+  
+ 
+                    }
+                   
+                }
+            }
+        }
+    }
+}
+
+
+
+.subscribers{
+
+    .container-fluid{
+        padding: 4rem;
+        @include res-below(md){
+          text-align: center;
+          padding: 1rem;
+        }
+    .content{
+        h2{
+            padding: 0px 40px;
+            font-size: 4rem;
+            font-weight: 600;
+            font-variant-caps: all-petite-caps;
+            @include res-below(md){
+                font-size: 2rem;
+                
+            }
+        }
+        h5{ font-size: 1.7rem;           
+             padding: 0px 40px;
+             font-weight: 500;
+              @media screen and (max-width:767px) {
+                font-size: 1rem;
+                
+            }
+             }
+             
+    }
+    .btn{
+        padding: 25px 50px;
+        background-color: slateblue;
+        h2{
+            font-size:3rem;
+            color:#fff;
+        }
+        @media screen and (max-width:767px) {
+            padding: 10px 50px;
+            h2{
+              font-size: 1.2rem;
+            }
+        }
+    }
+    }
+}
+
+ 
+
+  

@@ -1,0 +1,62 @@
+
+@import '/src/app/media';
+
+
+body{
+    margin: 0;
+    padding: 0;
+    position: relative;
+    box-sizing: border-box;
+
+}
+
+
+.navbar-light .navbar-nav .nav-link{
+    
+   color:#fff;
+     font-weight: 500;
+    font-size: 18px; 
+    padding: 10px 20px;
+    &:hover{
+        text-decoration: underline;
+        color: #fceb04;
+    }
+   
+}
+
+.navbar-expand-lg .navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand{
+    padding: 5px 40px;
+    img{
+        width:250px;
+        height:70px;
+    }@include res-below(md){
+        padding: 0;
+        
+    }
+}
+.input-group{
+     @include res-below(md) {
+            display: none;
+        }
+}
+.main-tab{
+    padding: 0px;
+    display:flex;
+    @include res-below(md){ align-self: center; padding: 18px 0 0;}
+}
+.tabs{
+    color:#FFF;
+    padding: 5px 20px 0;
+    display: flex;
+    @include res-below(md) {
+        padding: 5px 15px;
+    }
+    .area{
+        font-size: 18px;
+        display: inline;
+    }
+}

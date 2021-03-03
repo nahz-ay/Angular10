@@ -1,0 +1,72 @@
+
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-dark ml-auto">
+  <div class="container-fluid">
+    <a class="navbar-brand" routerLink="">
+      <img src="../assets/img/logof.png" class="img-fluid" alt="">
+    </a>
+ 
+      <div class="input-group w-50">
+        <input type="text" class="form-control"> 
+        <div class="input-group-append">
+          <span class="input-group-text btn btn-warning"> <i class="fa fa-search"></i></span>
+        </div>
+      
+     </div>
+    
+
+
+
+     
+
+    <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-warning"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        <div class="main-tab">
+
+        
+         <li class="nav-item">
+          <div class="tabs">
+            <i class="fa fa-map-marker fa-2x">
+              <div class="area">location</div>
+            </i>
+            
+          </div>
+         </li>
+
+         <li class="nav-item">
+          <div class="tabs" routerLink="cart">
+            <i class="fa fa-shopping-cart fa-2x"></i>
+          </div>
+         </li>
+
+        <li class="nav-item">
+          <div class="tabs">
+            <i class="fa fa-user fa-2x"></i>
+          </div>
+         </li>
+
+      
+        <!-- <li class="nav-item">
+          <a class="nav-link" routerLink="tabs">Link</a>
+        </li> -->
+      </div>
+        <li class="nav-item">
+        <a class="nav-link" routerLink="">Home</a>
+      </li>
+      </ul>
+      <form class="d-flex d-lg-none">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+<app-footer></app-footer>

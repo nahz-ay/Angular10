@@ -1,0 +1,107 @@
+<section class="category">
+    <h2 class="text-center"> Categories</h2>
+    <div class="container">
+       
+
+    <div class="row">
+        <div class="col m-2" *ngFor="let cat of categories">
+            <div class="card">
+                <div class="card-body"></div>
+                <div class="card-footer">
+                    <h4 class="text-center">{{cat.name}}</h4>
+                </div>
+            </div>
+        </div>
+     
+    
+    </div>
+
+
+    <div class="row">
+        <div class="col m-2" *ngFor="let cat of categories">
+            <div class="card">
+                <div class="card-body"></div>
+                <div class="card-footer">
+                    <h4 class="text-center">{{cat.name}}</h4>
+                </div>
+            </div>
+        </div>
+     
+    
+    </div>
+
+</div>
+</section>
+
+
+<section class="bestsellers">
+    <h2 class="text-center">Best Sellers</h2>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 mb-4" *ngFor ="let pt of products">
+                <div class="card shadow ">
+                <div class="card-body p-0">
+                    <img src="{{pt.image}}" class="img-fluid" alt="">
+                </div>
+                <div class="card-footer">
+                    <div class="" id="star">
+                         <div class="rating-group">
+                                <input class="rating__input rating__input--none" checked name="rating2" id="rating2-0" value="0" type="radio">
+                                <label aria-label="0.5 stars" class="rating__label rating__label--half" for="rating2-05"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-05" value="0.5" type="radio">
+                                <label aria-label="1 star" class="rating__label" for="rating2-10"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-10" value="1" type="radio">
+                                <label aria-label="1.5 stars" class="rating__label rating__label--half" for="rating2-15"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-15" value="1.5" type="radio">
+                                <label aria-label="2 stars" class="rating__label" for="rating2-20"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-20" value="2" type="radio">
+                                <label aria-label="2.5 stars" class="rating__label rating__label--half" for="rating2-25"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-25" value="2.5" type="radio" checked>
+                                <label aria-label="3 stars" class="rating__label" for="rating2-30"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-30" value="3" type="radio">
+                                <label aria-label="3.5 stars" class="rating__label rating__label--half" for="rating2-35"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-35" value="3.5" type="radio">
+                                <label aria-label="4 stars" class="rating__label" for="rating2-40"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-40" value="4" type="radio">
+                                <label aria-label="4.5 stars" class="rating__label rating__label--half" for="rating2-45"><i class="rating__icon rating__icon--star fa fa-star-half"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-45" value="4.5" type="radio">
+                                <label aria-label="5 stars" class="rating__label" for="rating2-50"><i class="rating__icon rating__icon--star fa fa-star"></i></label>
+                                <input class="rating__input" name="rating2" id="rating2-50" value="5" type="radio">
+                            </div>
+                         </div>
+                    <div class="spec">
+                       <h5 class="name mt-1">{{pt.name}}</h5>
+                        <div class="like">
+                            <i class="fa fa-heart-o"></i>
+                        </div>
+                    </div>
+                   
+                    <div class="price mt-1"><h3>price$</h3></div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="subscribers">
+    <div class="container-fluid bg-warning">
+        <div class="row">
+        <div class="col-lg-6 ">
+            <div class="content">
+                <h2>Join Our Network</h2>
+                <h5>SELL ON DUBBLIES</h5>
+            </div>
+          
+        </div>
+        <div class="col-lg-6">
+            <div class="align-self-center text-lg-center pt-3">
+                <div class="btn btn-lg">
+                    <h2>Seller Registration</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
